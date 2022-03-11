@@ -1,4 +1,4 @@
-# INFO_6359
+# INFO_6350
 
 This project is the assignment for the class of SmartPhone Dvelopment, INFO6350 at Northeastern University Seattle campus.
 
