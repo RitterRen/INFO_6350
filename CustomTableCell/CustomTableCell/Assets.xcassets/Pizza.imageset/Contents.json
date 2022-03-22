@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
