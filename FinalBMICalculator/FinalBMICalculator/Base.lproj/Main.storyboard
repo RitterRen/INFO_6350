@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalBMICalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9b9-cR-Y1Q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QYa-7M-OFM">
+                                <rect key="frame" x="30" y="104" width="354" height="174"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight In LBS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceJ-bq-GJh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Trh-JJ-OE9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bty-rw-Zed">
+                                        <rect key="frame" x="0.0" y="100" width="354" height="74"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FEET" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-Yf-dSc">
+                                                <rect key="frame" x="0.0" y="20" width="120" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="2dg-Oh-eG9"/>
+                                                    <constraint firstAttribute="height" constant="40" id="aLC-ks-K5z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inches" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-MU-rJt">
+                                                <rect key="frame" x="234" y="20" width="120" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Hob-o6-L3e"/>
+                                                    <constraint firstAttribute="width" constant="120" id="h58-4w-YjD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fT-ZK-W2H">
+                                <rect key="frame" x="20" y="372" width="374" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WUO-rm-DIe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Calculate BMI">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculateBMIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCb-xT-mmK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR BMI :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7U-9n-knO">
+                                <rect key="frame" x="147" y="539" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QYa-7M-OFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1bP-1g-LXG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9b9-cR-Y1Q" secondAttribute="bottom" id="7cu-96-8Lh"/>
+                            <constraint firstItem="5fT-ZK-W2H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QZd-qE-BzE"/>
+                            <constraint firstItem="9b9-cR-Y1Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f4w-YX-eo2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QYa-7M-OFM" secondAttribute="trailing" constant="30" id="gWl-h4-YSf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5fT-ZK-W2H" secondAttribute="trailing" constant="20" id="rUm-Dz-3Ri"/>
+                            <constraint firstItem="9b9-cR-Y1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tAp-IA-5zO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9b9-cR-Y1Q" secondAttribute="trailing" id="zF4-4x-Jxg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="F7U-9n-knO" id="xuS-8O-qDb"/>
+                        <outlet property="txtFeet" destination="ZsT-Yf-dSc" id="4j1-ri-lyG"/>
+                        <outlet property="txtInches" destination="4Hl-MU-rJt" id="lSU-SF-WXC"/>
+                        <outlet property="txtWeight" destination="ceJ-bq-GJh" id="TyD-4r-b03"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="66" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
